@@ -13,8 +13,8 @@ class SampleProcedureParameters {
     static SampleProcedureParameters initParameters(StepParameters sp) {
         SampleProcedureParameters parameters = new SampleProcedureParameters()
 
-        def applicationPath = sp.getRequiredParameter('applicationPath').value
-        parameters.applicationPath = applicationPath
+       // def applicationPath = sp.getRequiredParameter('applicationPath').value
+       // parameters.applicationPath = applicationPath
 
         return parameters
     }

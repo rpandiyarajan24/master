@@ -3,7 +3,7 @@ pluginInfo:
   # Feel free to change it
   # Call pdk showdoc pluginspec to see the list of available fields and their description
   pluginName: 'samplepoc'
-  version: '1.0.0'
+  version: '1.0.5'
   description: 'Samplepoc'
   author: 'Rajan'
   supportUrl: 'http:samplepoc.com'
@@ -34,15 +34,15 @@ configuration:
   -
     name: endpoint
     documentation: Third-party endpoint to connect to.
-    required: false
+    required: true
     type: entry
     label: Endpoint
   -
-    name: credential
+    name: accesstoken
     documentation: A sample credential
     required: true
-    type: credential
-    label: Credential
+    type: entry
+    label: Access token
 
 procedures:
 -
@@ -52,10 +52,37 @@ procedures:
   hasConfig: true
   parameters:
   -
-    name: applicationPath
+    name: branchName
     documentation: Path to the application
     required: true
     type: entry
-    label: Application Path
+    label: Branch Name
+  -
+    name: ownername
+    documentation: Path to the application
+    required: true
+    type: entry
+    label: ownername   
+  -
+    name: reponame
+    documentation: Path to the application
+    required: true
+    type: entry
+    label: reponame
   outputParameters:
     deployed: 'JSON representation of the deployed application'
+-
+  name: 'OrgCreation Procedure'
+  description: 'OrgCreation procedure description'
+  # configuration field will be generated automatically
+  hasConfig: true
+  parameters:
+  -
+    name: orgName
+    documentation: Path to the application
+    required: true
+    type: entry
+    label: orgName
+  outputParameters:
+    deployed: 'JSON representation of the deployed application'
+

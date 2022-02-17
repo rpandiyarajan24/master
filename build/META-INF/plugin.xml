@@ -1,0 +1,13 @@
+<plugin>
+  <key>samplepoc</key>
+  <label>samplepoc</label>
+  <author>Rajan</author>
+  <category>Utilities</category>
+  <description>Samplepoc</description>
+  <configure>ec_config</configure>
+  <version>1.0.5.0</version>
+  <authorUrl>http:samplepoc.com</authorUrl>
+  <help>help.xml</help>
+  <depends min='1.4.1'>EC-PluginManager</depends>
+  <commander-version min='6.0' />
+</plugin>
